@@ -355,7 +355,7 @@ void Cancel_a_Ticket()
                 {
                     Booked_Ticket[temp_user_index][busIndex] -= cancel_Ticket_Number;
                     buscapicity[busIndex] += cancel_Ticket_Number;
-                    printf("\n%d Seats Are Cancelled Successfully! %d Rupees Credited To Your Account Within 24 Hours.\n", cancel_Ticket_Number, cancel_Ticket_Number * 150);
+                    printf("\n%d Seats Are Cancelled Successfully! %d Rupees Credited To Your Account Within 24 Hours.\n", cancel_Ticket_Number, cancel_Ticket_Number * 1500);
                 }
                 else
                 {
@@ -395,24 +395,24 @@ void Check_Bus_Status()
             switch (bus_status_choice)
             {
             case 1:
-                printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\nFrom- Mumbai(Borivali)\nTo- Delhi(Janakpuri)\n", busnumber[0], buscapicity[0]);
+                printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\nFrom- Mumbai(Borivali)\nTo- Delhi(Janakpuri)\n", busnumber[0], buscapicity[0]);
                 break;
             case 2:
-                printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\nFrom- Uttrakhand(Bageshwar)\nTo- Assam(Guwahati)\n", busnumber[1], buscapicity[1]);
+                printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\nFrom- Uttrakhand(Bageshwar)\nTo- Assam(Guwahati)\n", busnumber[1], buscapicity[1]);
                 break;
             case 3:
-                printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\nFrom- Uttar Pradesh(Faizabad)\nTo- Jharkhand(Ranchi)\n", busnumber[2], buscapicity[2]);
+                printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\nFrom- Uttar Pradesh(Faizabad)\nTo- Jharkhand(Ranchi)\n", busnumber[2], buscapicity[2]);
                 break;
             case 4:
-                printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\nFrom- Haryana(Ambala)\nTo- Odisha(Cuttack)\n", busnumber[3], buscapicity[3]);
+                printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\nFrom- Haryana(Ambala)\nTo- Odisha(Cuttack)\n", busnumber[3], buscapicity[3]);
                 break;
             case 5:
-                printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\nFrom- Punjab(Jalandhar)\nTo- Tamil Nadu(Chennai)\n", busnumber[4], buscapicity[4]);
+                printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\nFrom- Punjab(Jalandhar)\nTo- Tamil Nadu(Chennai)\n", busnumber[4], buscapicity[4]);
                 break;
             case 6:
                 for (int i = 0; i < 5; i++)
                 {
-                    printf("\nBus No.%d\nTotal Seat- 50\nSeats Left- %d\n", busnumber[i], buscapicity[i]);
+                    printf("\nBus No.%d\nTotal Seat- 50\nAvailable Seats- %d\n", busnumber[i], buscapicity[i]);
                 }
                 break;
             case 7:
@@ -431,7 +431,7 @@ void receipt()
     printf("\nName- %s", name[temp_user_index]);
     printf("\nEmail- %s", email[temp_user_index]);
     printf("\nPhone Number- %s", mobilenumber[temp_user_index]);
-    printf("\nBus No.%d\nTotal Seat Booked- %d\nBus One Seat Fare- 150\nTotal Fare You Have To Pay- %d\n", busnumber[userbuschoice], seat_book[temp_user_index], seat_book[temp_user_index] * 150);
+    printf("\nBus No.%d\nTotal Seat Booked- %d\nBus One Seat Fare- 1500\nTotal Fare You Have To Pay- %d\n", busnumber[userbuschoice], seat_book[temp_user_index], seat_book[temp_user_index] * 1500);
     printf("\n\nThank You For Using This Bus......\n");
 }
 
